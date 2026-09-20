@@ -104,7 +104,8 @@ https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
 modificar platform
 
 ingresar a la ruta :
-~/.arduino15/packages/esp32/hardware/esp32/2.0.17/platform.txt
+
+sudo nano ~/.arduino15/packages/esp32/hardware/esp32/2.0.17/platform.txt
 
 
 
