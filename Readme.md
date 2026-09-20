@@ -107,8 +107,22 @@ ingresar a la ruta :
 
 sudo nano ~/.arduino15/packages/esp32/hardware/esp32/2.0.17/platform.txt
 
+agregamos -w
+a
+build.extra_flags.esp32
+deberia quedar:
+build.extra_flags.esp32=-DARDUINO_USB_CDC_ON_BOOT=0 -w
 
+y 
+-zmuldefs
 
+en el apartado de:
+# ESP32 Support Start
+
+buscar:
+compiler.c.elf.libs.esp32 y agregar -zmuldefs
+deberia quedar:
+compiler.c.elf.libs.esp32= -zmuldefs -lesp_ringbuf -lefuse -lesp_ipc -ldriver -lesp_pm ->
 
 
 
