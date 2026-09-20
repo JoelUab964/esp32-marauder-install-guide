@@ -1,1 +1,117 @@
 ## prueba Guia instalacion
+
+pasos 
+placa duit esp32  utiliza el procesor esp32 
+
+explicar primero el esp32
+detalles de memoria y memoria externa 
+
+explicar el display 
+explicar el controlador y la interfaz de conexion xpt etc
+
+tarjeta micro sd con sistema de archivos fat 32
+
+componentes opcionales 
+ un modulo gps 
+ sensibilidad y modelo y frecuencia de actualizacion
+ 
+ led pixcel
+
+
+ EXPLICAL LA CONEXION O CABLEADO (DIAGRAMA ESQUEMATICO)
+
+
+
+Instalar arduino Ide version :
+
+ INSTALAR HERRAMIENTAS Y LIBRERIAS 
+
+ingresar al directorio raiz de Arduino Ide
+ 
+ creamos los directorio
+ 
+ mkdir tools cd tools
+ mkdir ESP32FS cd ESP32FS
+
+ decargamos el archivo  esp32fs.zip del sigueinte repositorio:
+ https://github.com/lorol/arduino-esp32fs-plugin/releases
+
+ ![alt text](image.png)
+
+
+ ACTUALIZADA
+
+AGREGAMO EL NUCLEO ESP32 ANUESTRA PLACA DESDE EL SIGUEINTE URL 
+https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+
+
+ AGREGAMOS EL LINK ESTABLE
+ https://espressif.github.io/arduino-esp32/package_esp32_index.json
+
+
+LUEGO SELECCIONAMOS HERRAMIENTAS PLACA
+GESTOR DE TAJETAS
+Y BUSCAMOS ESP32 BY ESPRESIFT SINDORME INSTALAMOS 
+VERISON 2.0.14
+
+INSTALAR LIBRERIAS
+
+
+LinkedList — https://github.com/ivanseidel/LinkedList
+
+TFT_eSPI (fork de justcallmekoko) — https://github.com/justcallmekoko/TFT_eSPI
+
+JPEGDecoder — https://github.com/Bodmer/JPEGDecoder
+
+NimBLE-Arduino — https://github.com/h2zero/NimBLE-Arduino
+
+Adafruit NeoPixel — https://github.com/adafruit/Adafruit_NeoPixel
+
+ArduinoJson v6.18.2 — https://github.com/bblanchon/ArduinoJson/releases/tag/v6.18.2
+
+SwitchLib — https://github.com/justcallmekoko/SwitchLib
+
+ESPAsyncWebServer — https://github.com/ESP32Async/ESPAsyncWebServer
+
+AsyncTCP — https://github.com/ESP32Async/AsyncTCP
+
+ESP32Ping — https://github.com/marian-craciunescu/ESP32Ping
+
+MicroNMEA — https://github.com/stevemarple/MicroNMEA
+
+XPT2046_Touchscreen — https://github.com/PaulStoffregen/XPT2046_Touchscreen
+
+EspSoftwareSerial v6.17.1 — https://github.com/plerup/espsoftwareserial/releases/tag/6.17.1
+
+Adafruit BusIO — https://github.com/adafruit/Adafruit_BusIO
+
+Adafruit MAX1704X — https://github.com/adafruit/Adafruit_MAX1704X
+
+
+
+
+
+
+
+ALTERNATIVA PARA SUBIR EL CODIGO DIRECTAMENTE 
+https://fr4nkfletcher.github.io/Adafruit_WebSerial_ESPTool/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+case gratis 
+https://www.printables.com/model/651095-esp32-marauder-case
