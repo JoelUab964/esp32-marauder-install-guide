@@ -143,18 +143,37 @@ y reemplazar por
 #undef TFT_HEIGHT
 #define TFT_HEIGHT 480
 
-en el mismo bloque ajustar YMAX
-cambiando
+
+
+# Configuración TFT_eSPI – ILI9486
+
+## 1. Ajustar `YMAX`
+
+En el mismo bloque donde se encuentra `YMAX`, cambiar:
+
+```cpp
 #define YMAX 320
-por 
+```
 
+por:
+
+```cpp
 #define YMAX TFT_HEIGHT
+```
 
+---
 
-Actualizar el User_Setup.h de la librería TFT_eSPI
+## 2. Actualizar `User_Setup.h`
 
+Editar el archivo de configuración de la librería **TFT_eSPI**:
+
+```bash
 sudo nano ~/Arduino/libraries/TFT_eSPI/User_Setup.h
+```
 
+Configurar los siguientes parámetros:
+
+```cpp
 #define RPI_ILI9486_DRIVER
 
 #define TFT_WIDTH  320
@@ -166,7 +185,9 @@ sudo nano ~/Arduino/libraries/TFT_eSPI/User_Setup.h
 #define TFT_CS   15
 #define TFT_DC    2
 #define TFT_RST   4
+
 #define TFT_BL   33
+
 #define TOUCH_CS 21
 
 #define LOAD_GLCD
@@ -181,6 +202,27 @@ sudo nano ~/Arduino/libraries/TFT_eSPI/User_Setup.h
 #define SPI_FREQUENCY  20000000
 #define SPI_READ_FREQUENCY  16000000
 #define SPI_TOUCH_FREQUENCY  2500000
+```
+
+### Resumen de configuración
+
+| Parámetro   |                Valor |
+| ----------- | -------------------: |
+| Driver      | `RPI_ILI9486_DRIVER` |
+| Resolución  |          `320 × 480` |
+| MISO        |              GPIO 19 |
+| MOSI        |              GPIO 23 |
+| SCLK        |              GPIO 18 |
+| CS          |              GPIO 15 |
+| DC          |               GPIO 2 |
+| RST         |               GPIO 4 |
+| Backlight   |              GPIO 33 |
+| Touch CS    |              GPIO 21 |
+| SPI         |               20 MHz |
+| SPI lectura |               16 MHz |
+| SPI Touch   |              2.5 MHz |
+
+
 
 
 
