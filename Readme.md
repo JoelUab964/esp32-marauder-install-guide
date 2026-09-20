@@ -41,13 +41,6 @@ ingresar al directorio raiz de Arduino Ide
 
  ACTUALIZADA
 
-AGREGAMO EL NUCLEO ESP32 ANUESTRA PLACA DESDE EL SIGUEINTE URL 
-https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
-
-
- AGREGAMOS EL LINK ESTABLE
- https://espressif.github.io/arduino-esp32/package_esp32_index.json
-
 
 LUEGO SELECCIONAMOS HERRAMIENTAS PLACA
 GESTOR DE TAJETAS
@@ -87,6 +80,31 @@ Adafruit BusIO — https://github.com/adafruit/Adafruit_BusIO
 
 Adafruit MAX1704X — https://github.com/adafruit/Adafruit_MAX1704X
 
+
+repositorio oficial del proyecto marauder
+https://github.com/justcallmekoko/ESP32Marauder
+
+
+
+descargar y eliminar las carpetas build y data
+
+
+AGREGAMO EL NUCLEO ESP32 ANUESTRA PLACA DESDE EL SIGUEINTE URL 
+https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+
+
+ AGREGAMOS EL LINK ESTABLE
+ https://espressif.github.io/arduino-esp32/package_esp32_index.json
+
+
+ se debe agregar en gestor de targetas esp32
+ se debe seleccionar la version 2.0.17
+
+
+modificar platform
+
+ingresar a la ruta :
+~/.arduino15/packages/esp32/hardware/esp32/2.0.17/platform.txt
 
 
 
