@@ -125,6 +125,34 @@ deberia quedar:
 compiler.c.elf.libs.esp32= -zmuldefs -lesp_ringbuf -lefuse -lesp_ipc -ldriver -lesp_pm ->
 
 
+en la seccion del archivo configs.h modificar las siguientes lineas de codigo:
+
+#ifndef TFT_WIDTH
+  #define TFT_WIDTH 240
+#endif
+
+#ifndef TFT_HEIGHT
+  #define TFT_HEIGHT 320
+#endif
+
+y reemplazar por 
+
+
+#undef TFT_WIDTH
+#define TFT_WIDTH 320
+#undef TFT_HEIGHT
+#define TFT_HEIGHT 480
+
+en el mismo bloque ajustar YMAX
+cambiando
+#define YMAX 320
+por 
+
+#define YMAX TFT_HEIGHT
+
+
+
+
 
 ALTERNATIVA PARA SUBIR EL CODIGO DIRECTAMENTE 
 https://fr4nkfletcher.github.io/Adafruit_WebSerial_ESPTool/
