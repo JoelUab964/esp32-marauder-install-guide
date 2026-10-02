@@ -22,19 +22,6 @@ Esta guía es de uso educativo, orientada a una capacitación sobre auditoría d
   ```
   > El flag `--break-system-packages` es necesario en distribuciones Debian/Ubuntu/Kali recientes que gestionan Python como "entorno externamente administrado".
 
-### Hardware
-
-> ⚠️ Sección pendiente de completar — modelo definitivo de placa ESP32, GPS y componentes adicionales aún por confirmar.
-
-| Componente | Modelo / Detalle |
-|---|---|
-| Placa ESP32 | ESP32-D0WDQ6 (sin PSRAM, variante WROOM), 4MB flash, dual core |
-| Pantalla | ILI9486, 320×480, SKU MPI3501, touch resistivo XPT2046, diseño tipo "RPi" |
-| Tarjeta microSD | *(pendiente — módulo lector SPI, formateada en FAT32)* |
-| Módulo GPS | *(pendiente — modelo y velocidad de actualización)* |
-| LED direccionable (NeoPixel) | *(pendiente — pin a confirmar en `config.h`)* |
-| Botones físicos | *(pendiente — la pantalla incluye 3 botones sin usar aún)* |
-| Batería / gestión de energía | *(pendiente — IP5306 vía I2C, SDA=GPIO33, SCL=GPIO22 según documentación oficial; a confirmar si se implementa)* |
 
 ---
 
