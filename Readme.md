@@ -53,9 +53,6 @@ Esta guía es de uso educativo, orientada a una capacitación sobre auditoría d
 
 > **⚠️ Conflicto de pines resuelto:** el firmware de Marauder (bloque `MARAUDER_V4`) tiene **GPIO4 reservado por hardware para el GPS** (`GPS_TX`), en un UART distinto (`GPS_SERIAL_INDEX 2`) que no conviene reasignar por código. Como GPIO4 originalmente estaba ocupado por `TFT_RST`, se movió el reset de la pantalla a **GPIO26** (pin libre, sin lógica especial asociada) para liberar GPIO4 exclusivamente para el GPS.
 
-### Diagrama esquemático
-
-> *(pendiente de adjuntar imagen/diagrama)*
 
 ---
 
